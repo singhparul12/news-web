@@ -18,8 +18,7 @@ const Entertainment=()=>{
     };
     search();
     
-    },[]);
-     
+    },[]);  
 return (
     <div className="all"> 
            {
