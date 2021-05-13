@@ -7,14 +7,17 @@ import Sports from './components/Sports';
 import Business from './components/Business';
 import Health from './components/Health';
 import Header from './components/Header';
+import './components/news.css';
 
  
 export default () => {
     return (
+
         <div className="ui container">
             <BrowserRouter>
             <div>
                 <Header />
+                <Route path="/" exact component={Top} />
                 <Route path="/Search" exact component={Search} />
                 <Route path="/Entertainment" exact component={Entertainment} />
                 <Route path="/Sports" exact component={Sports} />

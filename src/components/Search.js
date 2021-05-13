@@ -21,6 +21,7 @@ const Search=()=>{
     };
     
     },[term]);
+    
 return (
     <div className="ui form">
         <div className="field">
@@ -29,29 +30,37 @@ return (
             onChange={(e)=> setTerm(e.target.value)}
              className="input"/>
              <br/>
-            <button type="submit"
+            <button className="ui button" style={{color:'white'},{backgroundColor:'grey'}} type="submit"
             onClick={(e)=>search()}
             >Search</button>
         </div>
-        <div className="all">
+         <div className="all">
         {
         lists.map((list) => {
-        return (
-            <div className="main">
-            <img className="thumbnail"
-             alt=""
-            src={list.urlToImage}/>
-               <h2 className="s_title">
-               <a href={list.url}>{list.title}</a>
-               </h2>
-               <div className="desc">
-                   {list.description}
-               </div>
-             </div>
-               );
+        if(list.totalResults===0){
+            return (
+            <div>NO RESULTS FOUND!</div>
+            );
+         }
+            else{
+                return (
+                    <div className="main">
+                    <img className="thumbnail"
+                     alt=""
+                    src={list.urlToImage}/>
+                       <h2 className="s_title">
+                       <a href={list.url}>{list.title}</a>
+                       </h2>
+                       <div className="desc">
+                           {list.description}
+                       </div>
+                     </div>
+                       );
+            }
     })
     }
-        </div>
+    </div>
+
     </div>
     );
 };
