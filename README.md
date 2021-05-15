@@ -4,8 +4,7 @@
 #### - News API is usedd as a primary source of data.
 #### - Fetched the data from the API using Axios package.
 
-![](Screenshot11.png)
-Format: ![C:\Users\abhay\OneDrive\Pictures\Screenshots]()
+ ![alt text](http://url/to/C:\Users\abhay\OneDrive\Pictures\Screenshots)
 
 ## Technology
 #### [React.js](http://reactjs.org) | A Javascript Library For Building User Interfaces
