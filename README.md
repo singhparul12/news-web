@@ -1,4 +1,4 @@
-# News-app
+# News-Web
 #### - It is a react web-app that loads the news for any searched keyword.
 #### - It is developed using HOOKS (functional components).
 #### - News API is usedd as a primary source of data.
