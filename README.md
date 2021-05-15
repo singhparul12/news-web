@@ -5,6 +5,8 @@
 #### - Fetched the data from the API using Axios package.
 
  ![](https://repository-images.githubusercontent.com/366670309/ac5ba400-b5bf-11eb-9d54-81a8caf06c65)
+ 
+ 
  ![](https://repository-images.githubusercontent.com/366670309/ec228b80-b5bf-11eb-8b3b-6b07adcc6655)
 
 ## Technology
