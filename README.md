@@ -4,7 +4,7 @@
 #### - News API is usedd as a primary source of data.
 #### - Fetched the data from the API using Axios package.
 
- ![GitHub Logo](https://repository-images.githubusercontent.com/366670309/0148eb80-b5bb-11eb-9893-6ed6d40a04e0)
+ ![GitHub Logo](https://repository-images.githubusercontent.com/366670309/46225180-b5be-11eb-8e93-6c397af65e78")
 
 ## Technology
 #### [React.js](http://reactjs.org) | A Javascript Library For Building User Interfaces
