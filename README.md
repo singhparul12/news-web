@@ -1,7 +1,7 @@
 # News-Web
 #### - It is a react web-app that loads the news for any searched keyword.
 #### - It is developed using HOOKS (functional components).
-#### - News API is usedd as a primary source of data.
+#### - News API is used as a primary source of data.
 #### - Fetched the data from the API using Axios package.
 
  ![](https://repository-images.githubusercontent.com/366670309/ac5ba400-b5bf-11eb-9d54-81a8caf06c65)
