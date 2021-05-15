@@ -4,7 +4,7 @@
 #### - News API is usedd as a primary source of data.
 #### - Fetched the data from the API using Axios package.
 
- <img src="C:\Users\abhay\OneDrive\Pictures\Screenshots\Screenshot (11).png"/>
+ ![GitHub Logo](\OneDrive\Pictures\Screenshots\Screenshot (11).png)
 
 ## Technology
 #### [React.js](http://reactjs.org) | A Javascript Library For Building User Interfaces
