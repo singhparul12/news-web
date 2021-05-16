@@ -37,7 +37,7 @@ return (
          <div className="all">
         {
             lists.length === 0 && term!=''
-            ? (<div>NO RESULTS FOUND! </div>)
+            ? (<div>NO RESULTS FOUND </div>)
             : lists.map((list) => (<div className="main">
             <img className="thumbnail"
              alt=""
