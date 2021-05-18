@@ -1,26 +1,22 @@
 import React, {useState,useEffect} from 'react';
 import axios from 'axios';
-import './news.css';
 
-const Top=()=>{
+const Navigation = (props) =>{
     const [Results,setResults] =useState([]);
-    
-     
+
     useEffect(()=>{
         const search= async ()=>{
-    const {data}= await axios.get('https://newsapi.org/v2/top-headlines',{
+    const {data}= await axios.get('https://newsapi.org/v2/top-headlines?category=props.posts',{
     params: {
          country:'in',
-         pageSize:20,
-        apiKey:'a6c2c1da30d447aeb4be8736d39eae02',
+         apiKey:'a6c2c1da30d447aeb4be8736d39eae02',
     }
     });
      setResults(data.articles);
     };
     search();
     
-    },[]);
-     
+    },[]);  
 return (
     <div className="all"> 
            {
@@ -44,6 +40,5 @@ return (
     }
     </div>
     );
-   
 };
-export default Top;
+export default Navigation;

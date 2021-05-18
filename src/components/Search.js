@@ -19,7 +19,6 @@ const Search=()=>{
     });
      setLists(data.articles);
     };
-    
     },[term]);
     
 return (
@@ -30,13 +29,13 @@ return (
             onChange={(e)=> setTerm(e.target.value)}
              className="input"/>
              <br/>
-            <button className="ui button" style={{color:"black"},{backgroundColor:"darkgrey"}} type="submit"
+            <button className="ui button" style={{color:'white'},{backgroundColor:'grey'}} type="submit"
             onClick={(e)=>search()}
             >Search</button>
-        </div>
+            </div>
          <div className="all">
         {
-            lists.length === 0 && term!=''
+            lists.length === 0 && term!==''
             ? (<div>NO RESULTS FOUND </div>)
             : lists.map((list) => (<div className="main">
             <img className="thumbnail"
@@ -45,9 +44,6 @@ return (
                <h2 className="s_title">
                <a href={list.url}>{list.title}</a>
                </h2>
-               <div className="desc">
-                   {list.description}
-               </div>
              </div>))
                 
             }

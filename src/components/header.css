@@ -1,13 +1,11 @@
-.menu {
-    display:flex;
-    flex-direction:row;
-    width: 100%;
-    border-bottom: black;
+.nav {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:2000px;
+    height: 50px;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bold;
 }
-@media screen and (max-width:500px) {
-    .menu {
-    display:flex;
-    flex-direction: column;
-    }
- }
-   

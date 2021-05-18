@@ -1,14 +1,13 @@
 import React from 'react';
-import {BrowserRouter, Route, Link} from 'react-router-dom';
+import {BrowserRouter, Route} from 'react-router-dom';
 import Top from './components/Top';
-import Search from './components/Search';
 import Entertainment from './components/Entertainment';
 import Sports from './components/Sports';
 import Business from './components/Business';
 import Health from './components/Health';
-import Header from './components/Header';
 import './components/news.css';
-
+import Header from './components/Header';
+import Search from './components/Search';
  
 export default () => {
     return (

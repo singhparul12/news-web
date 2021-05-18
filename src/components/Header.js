@@ -1,39 +1,27 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import './header.css';
+import './news.css';
+import { Button,Navbar,Nav,Form,FormControl} from 'react-bootstrap';
+
 
 const Header=()=>{
-   return (
-       <div className="menu">
-       <div className="ui inverted menu">
-           <div className="right menu">
-               <Link to="/Search" className="item">
-                   Search
-               </Link>
-           </div>
-           <div className="right menu">
-               <Link to="/Entertainment" className="item">
-                   Entertainment
-               </Link>
-           </div>
-           <div className="right menu">
-               <Link to="/Sports" className="item">
-                   Sports
-               </Link>
-           </div>
-           <div className="right menu">
-               <Link to="/Business" className="item">
-                   Business
-               </Link>
-           </div>
-           <div className="right menu">
-               <Link to="/Health" className="item">
-                   Health
-               </Link>
-           </div>
-           </div>
-       </div>
-       
-   );
+    return(
+ <> 
+  <Navbar className="nav" bg="light" variant="dark">
+    <Navbar.Brand href="#home">NEWS-WEB</Navbar.Brand>
+    <Nav className="mr-auto">
+      <Nav.Link  href="/">Home</Nav.Link>
+      <Nav.Link  href="/Search">Search</Nav.Link>
+      <Nav.Link  href="/Entertainment">Entertainment</Nav.Link>
+      <Nav.Link  href="/Sports">Sports</Nav.Link>
+      <Nav.Link  href="/Business">Business</Nav.Link>
+      <Nav.Link  href="/Health">Health</Nav.Link>
+    </Nav>
+    <Form inline>
+      <FormControl type="text" placeholder="Search" className="mr-sm-2"  />
+      <Button variant="outline-primary" >Search</Button>
+    </Form>
+  </Navbar>
+</>
+    );
 }
 export default Header;
